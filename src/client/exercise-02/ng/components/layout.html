@@ -1,6 +1,12 @@
 <div id="content">
-  <div class="container">
-    <h1 id="header">Exercise 2</h1>
-    <p>Show me Chuck Norris facts :</p>
+  <div class="container" >
+    <h1 id="header" class="md-primary" style="text-align:center">Exercise 2</h1>
+    <p style="text-align:center">Show me Chuck Norris facts :</p>
+    <ul style="list-style-type: none; width:1000px; margin:auto">
+      <li ng-repeat="fact in $ctrl.facts">
+        <fact fact="fact"></fact>
+        <hr ng-if="!$last"/>
+     </li>
+    </ul>
   </div>
 </div>
